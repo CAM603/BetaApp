@@ -144,22 +144,33 @@ h5 {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+input[type=text] {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 2em;
+  background-image: url('/img/search.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-color: cyan;
+  padding: 12px 20px 12px 40px;
+  font-size: 1.5rem;
 }
