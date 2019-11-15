@@ -163,14 +163,83 @@ img {
   max-width: 100%;
   height: auto;
 }
-input[type=text] {
+.topContainer {
+  background: #459375;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.topContainer .navigation {
+  margin-top: 30px;
+  width: 90%;
+}
+.topContainer .navigation .navBar {
+  margin: 10px 0px;
+  height: 40px;
+  width: 40px;
+  background: #f0f9fc;
+}
+.topContainer h1 {
+  width: 90%;
+  margin: 10px 0px;
+  color: black;
+  font-weight: bold;
+}
+.topContainer form {
+  margin: 10px 0px;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.topContainer form input[type=text] {
+  width: 90%;
   border: 1px solid white;
   border-radius: 2em;
   background-image: url('/img/search.png');
   background-repeat: no-repeat;
   background-position: 10px 10px;
-  background-color: cyan;
+  background-color: #f0f9fc;
   padding: 12px 20px 12px 40px;
   font-size: 1.5rem;
+  outline: none;
+}
+.topContainer .buttons {
+  margin: 10px 0px;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.topContainer .buttons button {
+  width: 50%;
+  height: 40px;
+  outline: none;
+  border: solid #f0f9fc 0.2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.topContainer .buttons .buttonOne {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background: #f0f9fc;
+  color: #459375;
+}
+.topContainer .buttons .buttonOne:hover {
+  background: #459375;
+  color: #f0f9fc;
+}
+.topContainer .buttons .buttonTwo {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #459375;
+  color: #f0f9fc;
+}
+.topContainer .buttons .buttonTwo:hover {
+  background: #f0f9fc;
+  color: #459375;
 }

@@ -1,11 +1,80 @@
-input[type=text] {
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 2em;
-    background-image: url('/img/search.png');
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
-    background-color: cyan;
-    padding: 12px 20px 12px 40px;
-    font-size: 1.5rem;
+.topContainer {
+    background: @primary;
+    .flex();
+
+    .navigation {
+        margin-top: 30px;
+        width: 90%;
+        .navBar {
+            margin: 10px 0px;
+            height: 40px;
+            width: 40px;
+            background: @secondary;
+        }
+    }
+    h1 {
+        width: 90%;
+        margin: 10px 0px;
+        color: black;
+        font-weight: bold;
+    }
+    form {
+        margin: 10px 0px;
+        width: 100%;
+        .flex();
+
+        input[type=text] {
+            width: 90%;
+            border: 1px solid white;
+            border-radius: 2em;
+            background-image: url('/img/search.png');
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            background-color: @secondary;
+            padding: 12px 20px 12px 40px;
+            font-size: 1.5rem;
+            outline: none;
+        }
+    }
+    .buttons {
+        margin: 10px 0px;
+        width: 90%;
+        
+        .flex();
+        button {
+            width: 50%;
+            height: 40px;
+            outline: none;
+            border: solid @secondary .2rem;
+            font-family: @globalFont;
+            font-weight: bold;
+            font-size: 1.6rem;
+            
+        }
+        .buttonOne {
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            background: @secondary;
+            color: @primary;
+            &:hover {
+                background: @primary;
+                color: @secondary;
+            }
+    
+        }
+        .buttonTwo {
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            background: @primary;
+            color: @secondary;
+            &:hover {
+                background: @secondary;
+                color: @primary;
+            }
+        }
+    }
+
+
 }
+
+
