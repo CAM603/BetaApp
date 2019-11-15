@@ -175,10 +175,28 @@ img {
   width: 90%;
 }
 .topContainer .navigation .navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px 0px;
   height: 40px;
   width: 40px;
   background: #f0f9fc;
+}
+.topContainer .navigation .navBar button {
+  display: none;
+  width: 30%;
+  height: 90%;
+}
+.topContainer .navigation .navBar:hover {
+  width: 100%;
+  transition: 500ms;
+  height: 50px;
+  background: #459375;
+}
+.topContainer .navigation .navBar:hover button {
+  display: unset;
 }
 .topContainer h1 {
   width: 90%;
@@ -232,6 +250,7 @@ img {
 .topContainer .buttons .buttonOne:hover {
   background: #459375;
   color: #f0f9fc;
+  transition: 500ms;
 }
 .topContainer .buttons .buttonTwo {
   border-top-right-radius: 1rem;
@@ -242,4 +261,5 @@ img {
 .topContainer .buttons .buttonTwo:hover {
   background: #f0f9fc;
   color: #459375;
+  transition: 500ms;
 }
