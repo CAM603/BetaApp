@@ -12,6 +12,9 @@
             max-width: 800px;
             margin-top: 0;
         }
+        @media @desktop {
+            max-width: 100%;
+        }
         .navBar {
             .flex(row wrap, space-between, center);
             margin: 10px 0px;
@@ -55,7 +58,7 @@
                 transition: 200ms;
                 background: @primary;
                 .link {
-                    display: unset;  
+                    display: flex;  
                 } 
             }
         }

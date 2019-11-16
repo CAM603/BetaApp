@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f0f9fc;
 }
 h1,
 h2,
@@ -185,6 +186,11 @@ img {
     width: 100%;
     max-width: 800px;
     margin-top: 0;
+  }
+}
+@media (min-width: 800px) {
+  .topContainer .navigation {
+    max-width: 100%;
   }
 }
 .topContainer .navigation .navBar {
@@ -246,7 +252,7 @@ img {
   background: #459375;
 }
 .topContainer .navigation .navBar:hover .link {
-  display: unset;
+  display: flex;
 }
 .topContainer h1 {
   width: 90%;
@@ -336,6 +342,11 @@ img {
 .footContainer {
   width: 100%;
 }
+@media (min-width: 500px) {
+  .footContainer {
+    display: none;
+  }
+}
 .footContainer .footer {
   display: flex;
   flex-flow: row wrap;
@@ -387,6 +398,11 @@ img {
     width: 50%;
   }
 }
+@media (min-width: 800px) {
+  .bodyContainer .eats {
+    width: 25%;
+  }
+}
 .bodyContainer .eats .content {
   width: 90%;
   text-align: center;
@@ -409,4 +425,9 @@ img {
 }
 .bodyContainer .eats:last-child {
   margin-bottom: 90px;
+}
+@media (min-width: 500px) {
+  .bodyContainer .eats:last-child {
+    margin: 0;
+  }
 }
