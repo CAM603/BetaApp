@@ -168,13 +168,15 @@ img {
 }
 .topContainer {
   background: #459375;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 .topContainer .navigation {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 90%;
 }
 .topContainer .navigation .navBar {
@@ -183,9 +185,10 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0px;
-  height: 40px;
-  width: 40px;
-  background: #f0f9fc;
+  height: 50px;
+  width: 50px;
+  background-image: url(/img/Html\ copy.png);
+  background-size: contain;
 }
 .topContainer .navigation .navBar button {
   display: none;
@@ -266,10 +269,62 @@ img {
   color: #459375;
   transition: 500ms;
 }
+.footContainer {
+  width: 100%;
+}
+.footContainer .footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8ac9b1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+}
+.footContainer .footer div {
+  height: 50px;
+  width: 25%;
+  max-width: 50px;
+  margin-top: 10px;
+}
+.footContainer .footer .img1 {
+  background-image: url(/img/Html\ copy.png);
+  background-size: contain;
+}
+.footContainer .footer .img2 {
+  background-image: url(/img/Css\ copy.png);
+  background-size: contain;
+}
+.bodyContainer {
+  background: #f0f9fc;
+}
 .bodyContainer .eats {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+.bodyContainer .eats .content:first-child {
+  margin-top: 10px;
+}
+.bodyContainer .eats .content {
+  width: 90%;
+  text-align: center;
+}
+.bodyContainer .eats img {
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  background: black;
+  border-radius: 1rem;
+}
+.bodyContainer .eats:last-child {
+  margin-bottom: 90px;
 }

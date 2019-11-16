@@ -1,16 +1,19 @@
 .topContainer {
     background: @primary;
+    position: sticky;
+    top: 0;
     .flex();
 
     .navigation {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 90%;
         .navBar {
             .flex(row wrap, space-between, center);
             margin: 10px 0px;
-            height: 40px;
-            width: 40px;
-            background: @secondary;
+            height: 50px;
+            width: 50px;
+            background-image: url(/img/Html\ copy.png);
+            background-size: contain;
             button {
                 display: none;
                 width: 30%;

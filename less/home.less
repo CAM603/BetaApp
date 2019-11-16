@@ -1,11 +1,29 @@
 .bodyContainer {
     
+    background: @secondary;
 
     .eats {
         width: 100%;
         .flex();
+        .content:first-child {
+            margin-top: 10px;
+
+        }
+    
+        .content {
+            width: 90%;
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 100%;
+            max-width: 400px;
+            background: black;
+            border-radius: 1rem;
+        }
     }
-
-
+    .eats:last-child {
+        margin-bottom: 90px;
+    }
 
 }
