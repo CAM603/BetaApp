@@ -2,9 +2,16 @@
 
 // Flex em
 
-.flex(@f-flow: row wrap, @j-content: center, @a-items: center){
+.flex(@f-flow: row wrap, @j-content: center, @a-items: center) {
 	display: flex;
 	flex-flow: @f-flow;
 	justify-content: @j-content;
 	align-items: @a-items;
+}
+
+// Mobile nav width
+
+.navWidth() {
+	width: 90%;
+	max-width: 500px;
 }

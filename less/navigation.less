@@ -6,7 +6,12 @@
 
     .navigation {
         margin-top: 20px;
-        width: 90%;
+        .navWidth();
+        @media @tablet {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 0;
+        }
         .navBar {
             .flex(row wrap, space-between, center);
             margin: 10px 0px;
@@ -14,36 +19,67 @@
             width: 50px;
             background-image: url(/img/Html\ copy.png);
             background-size: contain;
-            button {
+            @media @tablet {
+                margin: 0;
+                width: 100%;
+                background-image: none;
+                background: @primary-light;
+                .flex();
+            }
+            .link {
                 display: none;
-                width: 30%;
-                height: 90%;
+                width: 50px;
+                height: 50px;
+                background-image: url(/img/Html\ copy.png);
+                background-size: contain;
+                a {
+                    display: none;
+                    @media @tablet {
+                        display: unset;
+                        font-size: 2.5rem;
+                        text-decoration: none;
+                        color: @dark;
+                        font-style: italic;
+                    }
+                }
+                @media @tablet {
+                    display: unset;
+                    width: 33%;
+                    background-image: none;
+                    .flex();
+
+                }
             } 
             &:hover {
                 width: 100%;
-                transition: 500ms;
-                height: 50px;
+                transition: 200ms;
                 background: @primary;
-                button {
-                    display: unset;
-                    
+                .link {
+                    display: unset;  
                 } 
             }
         }
     }
     h1 {
-        width: 90%;
+        .navWidth();
         margin: 10px 0px;
         color: black;
         font-weight: bold;
+        @media @tablet {
+            text-align: center;
+            font-size: 4rem;
+        }
     }
     form {
         margin: 10px 0px;
-        width: 100%;
+        .navWidth();
         .flex();
+        @media @tablet {
+            display: none;
+        }
 
         input[type=text] {
-            width: 90%;
+            width: 100%;
             border: 1px solid white;
             border-radius: 2em;
             background-image: url('/img/search.png');
@@ -57,8 +93,10 @@
     }
     .buttons {
         margin: 10px 0px;
-        width: 90%;
-        
+        .navWidth();
+        @media @tablet {
+            display: none;
+        }
         .flex();
         button {
             width: 50%;
@@ -94,11 +132,8 @@
                 transition: 500ms;
             }
             
-        }
-        
+        }       
     }
-
-
 }
 
 

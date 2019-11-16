@@ -1,15 +1,15 @@
 .bodyContainer {
     .flex();
     background: @secondary;
-
     .eats {
         width: 100%;
         .flex();
         .content:first-child {
             margin-top: 10px;
-
         }
-    
+        @media @tablet {
+            width: 50%;     
+        }
         .content {
             width: 90%;
             text-align: center;
@@ -23,6 +23,10 @@
             background-position: center;
             background-repeat: no-repeat;
             border-radius: 1rem;
+            @media @tablet {
+                height: 300px;
+                max-width: 300px;
+            }  
         }
     }
     .eats:last-child {
