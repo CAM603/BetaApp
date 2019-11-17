@@ -137,6 +137,12 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   background-color: #f0f9fc;
 }
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
 h1,
 h2,
 h3,
@@ -175,6 +181,11 @@ img {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 500px) {
+  .topContainer {
+    width: 100%;
+  }
 }
 .topContainer .navigation {
   margin-top: 20px;
@@ -382,6 +393,11 @@ img {
   justify-content: center;
   align-items: center;
   background: #f0f9fc;
+}
+@media (min-width: 500px) {
+  .bodyContainer {
+    max-width: 1000px;
+  }
 }
 .bodyContainer .eats {
   width: 100%;
