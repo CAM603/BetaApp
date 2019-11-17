@@ -169,7 +169,7 @@ img {
 }
 .topContainer {
   background: #459375;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   flex-flow: row wrap;
